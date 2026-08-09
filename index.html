@@ -23,23 +23,27 @@
 <body class="bg-slate-900 text-slate-100 font-sans">
 
     <!-- Header / Navigation -->
-    <nav class="border-b border-slate-800 bg-navy sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <nav class="border-b border-slate-800 bg-navy sticky top-0 z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             
-            <!-- BRAND LOGO AREA (CUSTOMIZE HERE) -->
+            <!-- BRAND LOGO AREA (FIXED SIZING) -->
             <a href="#" class="flex items-center space-x-3">
-                <!-- Replace icon with logo image if available: <img src="logo.png" alt="Logo" class="h-8"> -->
-                <img src=Sleek_modern_logo_for_Grownex_Capital_page-0001-removebg-preview.png alt="Grownex Capital Logo" class="h-16 w-auto object-contain">
+                <img src="Sleek_modern_logo_for_Grownex_Capital_page-0001-removebg-preview.png" 
+                     alt="Grownex Capital Logo" 
+                     class="h-12 md:h-16 w-auto object-contain transition-all duration-300">
             </a>
 
+            <!-- NAVIGATION LINKS -->
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#services" class="hover:text-gold transition">Services</a>
                 <a href="#why-us" class="hover:text-gold transition">Why Us</a>
                 <a href="#contact" class="hover:text-gold transition">Get Quotation</a>
             </div>
+
+            <!-- WHATSAPP CTA -->
             <a href="https://wa.me/910000000000?text=Hi%20Grownex%20Capital,%20I%20need%20a%20financial%20consultation" 
-               class="bg-gold hover:bg-goldhover text-navy font-bold px-5 py-2.5 rounded-lg shadow-lg transition flex items-center gap-2">
-                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+               class="bg-gold hover:bg-goldhover text-navy font-bold px-5 py-2.5 rounded-lg shadow-lg transition flex items-center gap-2 text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
             </a>
         </div>
     </nav>
@@ -65,10 +69,13 @@
         </div>
     </section>
 
-    <!-- Product Grid -->
-    <section id="services" class="py-16 bg-slate-950 px-6">
+    <!-- Product Grid Section (SCROLL OFFSET FIX: scroll-mt-28) -->
+    <section id="services" class="py-16 bg-slate-950 px-6 scroll-mt-28">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Complete 360° Financial Portfolio</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gold">Complete 360° Financial Portfolio</h2>
+            <p class="text-center text-slate-400 text-sm mb-12 max-w-2xl mx-auto">
+                Discover our multi-provider suite designed to maximize coverage and return on investment.
+            </p>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Life Insurance -->
@@ -78,12 +85,12 @@
                     </div>
                     <h3 class="text-xl font-bold text-gold mb-3">Life & Tax-Free Wealth</h3>
                     <p class="text-slate-400 text-sm mb-4">
-                        Tax-free guaranteed return plans, whole life protection, and child milestone solutions from top-tier insurers.
+                        Tax-free guaranteed return plans under Sec 10(10D), term protection, and child education milestone solutions from top insurers[cite: 1, 2].
                     </p>
                     <ul class="text-xs text-slate-300 space-y-2 mb-6">
-                        <li>• Guaranteed Return Plans</li>
-                        <li>• Term Insurance (Level & Increasing)</li>
-                        <li>• Retirement & Pension Solutions</li>
+                        <li>• Guaranteed Return Plans (Smart Platina Series)[cite: 1, 2]</li>
+                        <li>• Term Insurance (Level & Increasing)[cite: 2]</li>
+                        <li>• Child Education & Retirement Solutions[cite: 2]</li>
                     </ul>
                 </div>
 
@@ -94,12 +101,12 @@
                     </div>
                     <h3 class="text-xl font-bold text-gold mb-3">General Insurance</h3>
                     <p class="text-slate-400 text-sm mb-4">
-                        Comprehensive health, motor, and commercial risk policies providing instant digital coverage.
+                        Comprehensive health, motor, and commercial risk protection offering instant digital policy issuance[cite: 1, 2].
                     </p>
                     <ul class="text-xs text-slate-300 space-y-2 mb-6">
                         <li>• Family Floater Health Insurance</li>
                         <li>• Two-Wheeler & Commercial Motor</li>
-                        <li>• Business Risk & Property Protection</li>
+                        <li>• Business Risk & Asset Protection</li>
                     </ul>
                 </div>
 
@@ -110,7 +117,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-gold mb-3">Loan Syndication</h3>
                     <p class="text-slate-400 text-sm mb-4">
-                        Fast-track disbursements with lowest interest rate comparisons across leading banks and NBFCs.
+                        Fast disbursements with lowest interest rate comparisons across leading banks and NBFCs[cite: 1, 2].
                     </p>
                     <ul class="text-xs text-slate-300 space-y-2 mb-6">
                         <li>• Business & Working Capital Loans</li>
@@ -122,30 +129,30 @@
         </div>
     </section>
 
-    <!-- NEW SECTION: Why Choose Us (#why-us FIX) -->
-    <section id="why-us" class="py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">Why Choose Grownex Capital?</h2>
+    <!-- Why Choose Us Section (SCROLL OFFSET FIX: scroll-mt-28) -->
+    <section id="why-us" class="py-20 px-6 max-w-7xl mx-auto scroll-mt-28">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gold">Why Choose Grownex Capital?</h2>
         <div class="grid md:grid-cols-3 gap-8 text-center">
             <div class="bg-navy/50 p-6 rounded-xl border border-slate-800">
                 <i class="fa-solid fa-scale-balanced text-gold text-3xl mb-4"></i>
                 <h3 class="font-bold text-lg mb-2">Unbiased Multi-Provider Advice</h3>
-                <p class="text-slate-400 text-sm">We don't push a single bank product. We compare 3 to 4 leading quotes to find what best fits your goals.</p>
+                <p class="text-slate-400 text-sm">We don't push single-bank options. We compare 3 to 4 leading quotes to find what best fits your goals[cite: 1, 2].</p>
             </div>
             <div class="bg-navy/50 p-6 rounded-xl border border-slate-800">
                 <i class="fa-solid fa-sack-dollar text-gold text-3xl mb-4"></i>
                 <h3 class="font-bold text-lg mb-2">Maximum Tax & Yield Optimization</h3>
-                <p class="text-slate-400 text-sm">Tailored financial planning focusing on high-margin, tax-free guaranteed returns under Sec 10(10D).</p>
+                <p class="text-slate-400 text-sm">Tailored financial planning focusing on high-margin, tax-free guaranteed returns under Sec 10(10D)[cite: 1, 2].</p>
             </div>
             <div class="bg-navy/50 p-6 rounded-xl border border-slate-800">
                 <i class="fa-solid fa-headset text-gold text-3xl mb-4"></i>
                 <h3 class="font-bold text-lg mb-2">End-to-End Assistance</h3>
-                <p class="text-slate-400 text-sm">From initial quote selection to application submission and claim servicing, we manage everything.</p>
+                <p class="text-slate-400 text-sm">From initial quote selection to application submission and claim servicing, we manage everything[cite: 1, 2].</p>
             </div>
         </div>
     </section>
 
-    <!-- Lead Form Section -->
-    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto">
+    <!-- Lead Form Section (SCROLL OFFSET FIX: scroll-mt-28) -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto scroll-mt-28">
         <div class="bg-navy p-8 md:p-12 rounded-2xl border border-gold/40 shadow-2xl">
             <h2 class="text-3xl font-bold text-center text-gold mb-2">Request 3–4 Customized Quotes</h2>
             <p class="text-center text-slate-400 text-sm mb-8">Fill in your requirements to receive unbiased financial comparisons.</p>
@@ -189,7 +196,7 @@
     <!-- Footer -->
     <footer class="border-t border-slate-800 bg-navy py-12 text-center text-xs text-slate-500">
         <p class="mb-2">GROWNEX CAPITAL — Founder: Mohammed Faheem Shilledar</p>
-        <p>Haliyal, Karnataka, India | Confidential Operational Framework</p>
+        <p>Haliyal, Karnataka, India | Confidential Operational Framework[cite: 1, 2]</p>
     </footer>
 
 </body>
